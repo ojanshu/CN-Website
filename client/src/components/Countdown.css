@@ -1,0 +1,38 @@
+/* src/Countdown.css */
+/* src/Countdown.css */
+.countdown-container {
+    background: linear-gradient(to bottom, #000, #333, #000);
+    padding: 2rem;
+    border-radius: 0.375rem;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  
+  .timer-component {
+    position: relative;
+    padding: 1rem;
+    border: 2px solid transparent;
+    background: linear-gradient(#000, #000) padding-box, linear-gradient(to right, #ff7e5f, #feb47b) border-box;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .timer-component:hover {
+    border-color: transparent;
+  }
+  
+  .timer-component:hover::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    z-index: -1;
+    border-radius: 0.375rem;
+  }
+  
