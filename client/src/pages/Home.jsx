@@ -22,7 +22,7 @@ const Home = () => {
     }
   }, [location]);
 
-  const targetDate = '2024-07-30T00:00:00';
+  const targetDate = '2024-06-30T00:00:00';
   
   return (
     <div className>

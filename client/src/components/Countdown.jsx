@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import './Countdown.css';
+import React, { useEffect, useState } from "react";
+import "./Countdown.css";
 
 const Countdown = ({ targetDate }) => {
   const calculateTimeLeft = () => {
@@ -11,7 +11,9 @@ const Countdown = ({ targetDate }) => {
     if (difference > 0) {
       timeLeft = {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        hours: Math.floor(
+          (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        ),
         minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
         seconds: Math.floor((difference % (1000 * 60)) / 1000),
       };
@@ -39,7 +41,9 @@ const Countdown = ({ targetDate }) => {
           <div className="timer-component text-white text-3xl md:text-5xl p-4 rounded-md h-full">
             {timeLeft[interval]}
           </div>
-          <div className="text-xl mt-2">{interval.charAt(0).toUpperCase() + interval.slice(1)}</div>
+          <div className="text-xl mt-2">
+            {interval.charAt(0).toUpperCase() + interval.slice(1)}
+          </div>
         </div>
       );
     }
@@ -57,9 +61,14 @@ const Countdown = ({ targetDate }) => {
       </div>
       {Object.keys(timeLeft).length > 0 && (
         <div className="flex justify-center">
-          <button className="bg-orange-500 text-white py-2 px-16 rounded-full hover:bg-orange-600 transform hover:scale-105 glow-on-hover w-48">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc2kqx8m78SiusHS6bZB5r8IZqaZ_tBK0MVk9orrpSKM421GA/viewform"
+            target="_blank"
+            className="bg-orange-500 text-white py-2 px-16 rounded-full 
+          hover:bg-orange-600 transform hover:scale-105 glow-on-hover w-48"
+          >
             Apply
-          </button>
+          </a>
         </div>
       )}
     </div>

@@ -36,9 +36,9 @@ const Events = () => {
       </div>
       
       <div className="text-center">
-      <button className="bg-orange-500 text-white py-2 px-16 rounded-full hover:bg-orange-600 transform hover:scale-105 glow-on-hover w-48">
+      {/* <button className="bg-orange-500 text-white py-2 px-16 rounded-full hover:bg-orange-600 transform hover:scale-105 glow-on-hover w-48">
           Explore
-        </button>
+        </button> */}
       </div>
     </div>
   );

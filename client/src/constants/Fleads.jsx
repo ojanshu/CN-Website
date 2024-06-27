@@ -8,7 +8,8 @@ import anmol from "../assets/leads/anmolT.jpg";
 import arnav from "../assets/leads/ARNAV.jpg";
 import biswa from "../assets/leads/Biswa.jpg";
 import saujanya from "../assets/leads/SAUJANYA.jpg";
-import tanisha from "../assets/leads/TANISHA.jpg"
+import tanisha from "../assets/leads/TANISHA.jpg";
+import tanishaaa from "../assets/leads/tanishaaa.jpeg";
 
   
 export const Fleads = [
@@ -28,7 +29,7 @@ export const Fleads = [
       id: 3,
       title: "Tanisha Singh",
       content: "Vice-President",
-      backgroundImage: tanishapres
+      backgroundImage: tanishaaa
     },
     {
       id: 4,

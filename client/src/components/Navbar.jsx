@@ -9,10 +9,10 @@ const Navbar = () => {
     <div className="max-w-5xl mx-auto ">
       <div
         className="flex items-center justify-between 
-bg-white/70 backdrop-blur-md text-black p-4 shadow-lg flex-wrap font-sans rounded-2xl"
+bg-white/0 backdrop-blur-md text-black p-4 shadow-lg flex-wrap font-sans rounded-2xl"
       >
         <Link to="/">
-          <img className="w-[160px] h-[30px]" src={assets.logo} alt="Logo" />
+          <img className="w-[160px] h-[50px]" src={assets.cnxkiitNOBG} alt="Logo" />
         </Link>
 
         
@@ -20,11 +20,8 @@ bg-white/70 backdrop-blur-md text-black p-4 shadow-lg flex-wrap font-sans rounde
         <Link to="/">
           <li
             onClick={() => setMenu("Home")}
-            className={
-              menu === "Home"
-                ? "text-orange-500 cursor-pointer"
-                : "hover:text-black-500 cursor-pointer"
-            }
+            className="text-orange-500 hover:text-white cursor-pointer"
+            
           >
             Home
           </li>
@@ -32,11 +29,7 @@ bg-white/70 backdrop-blur-md text-black p-4 shadow-lg flex-wrap font-sans rounde
           <Link to="/#events">
             <li
               onClick={() => setMenu("Events")}
-              className={
-                menu === "Events"
-                  ? "text-orange-500 cursor-pointer"
-                  : "hover:text-black-500 cursor-pointer"
-              }
+              className="text-orange-500 hover:text-white cursor-pointer"
             >
               Events
             </li>
@@ -45,11 +38,7 @@ bg-white/70 backdrop-blur-md text-black p-4 shadow-lg flex-wrap font-sans rounde
           <Link to="/domains">
             <li
               onClick={() => setMenu("Domains")}
-              className={
-                menu === "Domains"
-                  ? "text-orange-500 cursor-pointer"
-                  : "hover:text-black-500 cursor-pointer"
-              }
+              className="text-orange-500 hover:text-white cursor-pointer"
             >
               Domains
             </li>
